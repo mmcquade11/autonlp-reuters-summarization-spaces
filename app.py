@@ -17,7 +17,7 @@ def extrac_text(url):
   return text
 
 extractor = gr.Interface(extrac_text, 'text', 'text')
-summarizer = gr.Interface.load("huggingface/facebook/bart-large-cnn")
+summarizer = gr.Interface.load("huggingface/mmcquade11/autonlp-reuters-summarization")
 sample_url = [['https://www.cp24.com/news/ontario-reports-481-new-covid-19-cases-1-death-1.5667950'],
 ]
 desc =  '''
